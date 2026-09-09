@@ -7,7 +7,7 @@ Features
 - Shows current weather (temperature, wind)
 - Shows next 24 hours hourly table (temperature, humidity, precipitation)
 
-Run locally
+Run locally (Python)
 
 1. Python 3.10+ recommended
 2. cd weather-dashboard/backend
@@ -15,6 +15,12 @@ Run locally
 4. pip install -r requirements.txt
 5. uvicorn main:app --reload --host 0.0.0.0 --port 8000
 6. Open http://localhost:8000 in your browser
+
+Run locally with Docker (recommended)
+
+1. From the repository root run:
+   docker compose -f weather-dashboard/docker-compose.yml up --build
+2. Open http://localhost:8000
 
 Notes
 - This project uses Open-Meteo's free APIs: https://open-meteo.com/
