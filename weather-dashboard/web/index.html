@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    <form id="searchForm">
+      <input id="cityInput" placeholder="Enter city (e.g. London)" value="London" />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="status"></div>
+
+    <section id="current" class="card hidden">
+      <h2>Current Weather</h2>
+      <div id="currentContent"></div>
+    </section>
+
+    <section id="hourly" class="card hidden">
+      <h2>Hourly (next 24 hours)</h2>
+      <div id="hourlyContent"></div>
+    </section>
+
+    <footer>
+      Data from Open-Meteo (no API key required) — https://open-meteo.com/
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
